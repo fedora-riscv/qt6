@@ -1,7 +1,7 @@
 
 Name: qt6
 Version: 6.0.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Qt6 meta package
 License: GPLv3
 URL: https://getfedora.org/
@@ -115,5 +115,8 @@ echo "- Qt6 devel meta package" > %{buildroot}%{_docdir}/qt6-devel/README
 
 
 %changelog
+* Wed Jan 27 2021 Fedora Release Engineering <releng@fedoraproject.org> - 6.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
+
 * Wed Jan 06 2021 Jan Grulich <jgrulich@redhat.com> - 6.0.0-1
 - 6.0.0
