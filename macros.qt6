@@ -52,7 +52,7 @@
         -DINSTALL_ARCHDATADIR=%{_qt6_archdatadir} \\\
         -DINSTALL_BINDIR=%{_qt6_bindir} \\\
         -DINSTALL_LIBDIR=%{_qt6_libdir} \\\
-        -DINSTALL_LIBEXECDIR=%{_qt6_libdir} \\\
+        -DINSTALL_LIBEXECDIR=%{_qt6_libexecdir} \\\
         -DINSTALL_DATADIR=%{_qt6_datadir} \\\
         -DINSTALL_DOCDIR=%{_qt6_docdir} \\\
         -DINSTALL_INCLUDEDIR=%{_qt6_headerdir} \\\
