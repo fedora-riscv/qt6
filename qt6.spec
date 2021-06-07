@@ -1,7 +1,7 @@
 
 Name: qt6
-Version: 6.1.0
-Release: 2%{?dist}
+Version: 6.1.1
+Release: 1%{?dist}
 Summary: Qt6 meta package
 License: GPLv3
 URL: https://getfedora.org/
@@ -115,6 +115,9 @@ echo "- Qt6 devel meta package" > %{buildroot}%{_docdir}/qt6-devel/README
 
 
 %changelog
+* Mon Jun 07 2021 Jan Grulich <jgrulich@redhat.com> - 6.1.1-1
+- 6.1.1
+
 * Mon May 24 2021 Jan Grulich <jgrulich@redhat.com> - 6.1.0-2
 - Fix path to libexecdir
 
