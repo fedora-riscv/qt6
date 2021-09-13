@@ -1,7 +1,7 @@
 
 Name: qt6
 Version: 6.2.0~beta4
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: Qt6 meta package
 License: GPLv3
 URL: https://getfedora.org/
@@ -115,6 +115,9 @@ echo "- Qt6 devel meta package" > %{buildroot}%{_docdir}/qt6-devel/README
 
 
 %changelog
+* Mon Sep 13 2021 Jan Grulich <jgrulich@redhat.com> - 6.2.0~beta4-3
+- Drop qt6_exclude_arch macro
+
 * Mon Sep 13 2021 Jan Grulich <jgrulich@redhat.com> - 6.2.0~beta4-2
 - Add qt6_exclude_arch macro
 
