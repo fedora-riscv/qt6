@@ -1,7 +1,7 @@
 
 Name: qt6
-Version: 6.2.0~beta4
-Release: 3%{?dist}
+Version: 6.2.0~rc
+Release: 1%{?dist}
 Summary: Qt6 meta package
 License: GPLv3
 URL: https://getfedora.org/
@@ -10,50 +10,79 @@ Source1: macros.qt6-srpm
 Source2: qmake-qt6.sh
 BuildArch: noarch
 
-Requires: qt6-qt5compat
 Requires: qt6-qt3d
+Requires: qt6-qt5compat
 Requires: qt6-qtbase
 Requires: qt6-qtbase-gui
 Requires: qt6-qtbase-mysql
 Requires: qt6-qtbase-postgresql
+Requires: qt6-qtcharts
+Requires: qt6-qtconnectivity
+Requires: qt6-qtdatavis3d
 Requires: qt6-qtdeclarative
 Requires: qt6-qtdoc
 Requires: qt6-qtimageformats
+Requires: qt6-qtlocation
+Requires: qt6-qtlottie
+Requires: qt6-qtmultimedia
 Requires: qt6-qtnetworkauth
-Requires: qt6-qtquickcontrols2
 Requires: qt6-qtquick3d
+Requires: qt6-qtquickcontrols2
 Requires: qt6-qtquicktimeline
+Requires: qt6-qtremoteobjects
+Requires: qt6-qtscxml
+Requires: qt6-qtsensors
+Requires: qt6-qtserialbus
+Requires: qt6-qtserialport
 Requires: qt6-qtshadertools
 Requires: qt6-qtsvg
 Requires: qt6-qttools
+Requires: qt6-qtvirtualkeyboard
 Requires: qt6-qtwayland
+Requires: qt6-qtwebchannel
+Requires: qt6-qtwebsockets
+
 
 %description
 %{summary}.
 
 %package devel
 Summary: Qt6 meta devel package
-Requires: qt6-rpm-macros
-Requires: qt6-qttools-static
-Requires: qt6-qtdeclarative-static
-Requires: qt6-qtbase-static
 Requires: qt6-designer
+Requires: qt6-linguist
 Requires: qt6-qdoc
 Requires: qt6-qhelpgenerator
-Requires: qt6-linguist
 Requires: qt6-qt3d-devel
 Requires: qt6-qt5compat-devel
 Requires: qt6-qtbase-devel
+Requires: qt6-qtbase-static
+Requires: qt6-qtcharts-devel
+Requires: qt6-qtconnectivity-devel
+Requires: qt6-qtdatavis3d-devel
 Requires: qt6-qtdeclarative-devel
+Requires: qt6-qtdeclarative-static
 Requires: qt6-qtimageformats-devel
+Requires: qt6-qtlocation-devel
+Requires: qt6-qtlottie-devel
+Requires: qt6-qtmultimedia-devel
 Requires: qt6-qtnetworkauth-devel
-Requires: qt6-qtquickcontrols2-devel
 Requires: qt6-qtquick3d-devel
+Requires: qt6-qtquickcontrols2-devel
 Requires: qt6-qtquicktimeline-devel
+Requires: qt6-qtremoteobjects-devel
+Requires: qt6-qtscxml-devel
+Requires: qt6-qtsensors-devel
+Requires: qt6-qtserialbus-devel
+Requires: qt6-qtserialport-devel
 Requires: qt6-qtshadertools-devel
 Requires: qt6-qtsvg-devel
 Requires: qt6-qttools-devel
+Requires: qt6-qttools-static
+Requires: qt6-qtvirtualkeyboard-devel
 Requires: qt6-qtwayland-devel
+Requires: qt6-qtwebchannel-devel
+Requires: qt6-qtwebsockets-devel
+Requires: qt6-rpm-macros
 
 %description devel
 %{summary}.
@@ -115,6 +144,9 @@ echo "- Qt6 devel meta package" > %{buildroot}%{_docdir}/qt6-devel/README
 
 
 %changelog
+* Sat Sep 18 2021 Jan Grulich <jgrulich@redhat.com> - 6.2.0~rc-1
+- 6.2.0 - rc
+
 * Mon Sep 13 2021 Jan Grulich <jgrulich@redhat.com> - 6.2.0~beta4-3
 - Drop qt6_exclude_arch macro
 
