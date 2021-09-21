@@ -1,7 +1,7 @@
 
 Name: qt6
 Version: 6.2.0~rc
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Qt6 meta package
 License: GPLv3
 URL: https://getfedora.org/
@@ -27,7 +27,6 @@ Requires: qt6-qtlottie
 Requires: qt6-qtmultimedia
 Requires: qt6-qtnetworkauth
 Requires: qt6-qtquick3d
-Requires: qt6-qtquickcontrols2
 Requires: qt6-qtquicktimeline
 Requires: qt6-qtremoteobjects
 Requires: qt6-qtscxml
@@ -67,7 +66,6 @@ Requires: qt6-qtlottie-devel
 Requires: qt6-qtmultimedia-devel
 Requires: qt6-qtnetworkauth-devel
 Requires: qt6-qtquick3d-devel
-Requires: qt6-qtquickcontrols2-devel
 Requires: qt6-qtquicktimeline-devel
 Requires: qt6-qtremoteobjects-devel
 Requires: qt6-qtscxml-devel
@@ -144,6 +142,9 @@ echo "- Qt6 devel meta package" > %{buildroot}%{_docdir}/qt6-devel/README
 
 
 %changelog
+* Tue Sep 21 2021 Jan Grulich <jgrulich@redhat.com> - 6.2.0~rc-2
+- Drop qt6-qtquickcontrols2 from required packages
+
 * Sat Sep 18 2021 Jan Grulich <jgrulich@redhat.com> - 6.2.0~rc-1
 - 6.2.0 - rc
 
