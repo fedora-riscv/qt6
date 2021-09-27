@@ -1,7 +1,7 @@
 
 Name: qt6
-Version: 6.2.0~rc
-Release: 2%{?dist}
+Version: 6.2.0~rc2
+Release: 1%{?dist}
 Summary: Qt6 meta package
 License: GPLv3
 URL: https://getfedora.org/
@@ -142,6 +142,9 @@ echo "- Qt6 devel meta package" > %{buildroot}%{_docdir}/qt6-devel/README
 
 
 %changelog
+* Mon Sep 27 2021 Jan Grulich <jgrulich@redhat.com> - 6.2.0~rc2-1
+- 6.2.0 - rc2
+
 * Tue Sep 21 2021 Jan Grulich <jgrulich@redhat.com> - 6.2.0~rc-2
 - Drop qt6-qtquickcontrols2 from required packages
 
