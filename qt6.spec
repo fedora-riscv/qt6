@@ -1,6 +1,6 @@
 
 Name: qt6
-Version: 6.5.1
+Version: 6.5.2
 Release: 1%{?dist}
 Summary: Qt6 meta package
 License: GPL-3.0-only
@@ -142,6 +142,9 @@ echo "- Qt6 devel meta package" > %{buildroot}%{_docdir}/qt6-devel/README
 
 
 %changelog
+* Fri Jul 21 2023 Jan Grulich <jgrulich@redhat.com> - 6.5.2-1
+- 6.5.2
+
 * Mon May 22 2023 Jan Grulich <jgrulich@redhat.com> - 6.5.1-1
 - 6.5.1
 
