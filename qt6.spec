@@ -1,7 +1,7 @@
 
 Name: qt6
 Version: 6.6.0
-Release: 1%{?dist}
+Release: 1.rv64%{?dist}
 Summary: Qt6 meta package
 License: GPL-3.0-only
 URL: https://getfedora.org/
@@ -160,8 +160,14 @@ echo "- Qt6 devel meta package" > %{buildroot}%{_docdir}/qt6-devel/README
 * Mon May 22 2023 Jan Grulich <jgrulich@redhat.com> - 6.5.1-1
 - 6.5.1
 
+* Thu May 11 2023 Liu Yang <Yang.Liu.sn@gmail.com> - 6.5.0-1.rv64
+- cherry-pick davidlt's riscv64 patch for Fedora 38 riscv64 rebuild.
+
 * Mon Apr 03 2023 Jan Grulich <jgrulich@redhat.com> - 6.5.0-1
 - 6.5.0
+
+* Thu Mar 30 2023 David Abdurachmanov <davidlt@rivosinc.com> - 6.4.2-4.0.riscv64
+- Add riscv64 to qt6_qtwebengine_arches
 
 * Thu Mar 23 2023 Jan Grulich <jgrulich@redhat.com> - 6.4.2-4
 - 6.4.3
